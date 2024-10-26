@@ -11,7 +11,21 @@ AutoCountry Vehicle Finder v0.1
 ********************************
 Please Enter the following number below from the following menu:
 
-1. Print all Authorized Vehicles
+1. PRINT all Authorized Vehicles
 2. Exit
 """
     print(menu)
+
+#Adding second part of the menu.
+def print_allowed_vehicles():
+    vehicles = '\n'.join(AllowedVehiclesList)
+    menu = f"""
+The AutoCountry sales manager has authorized the purchase and selling of the following vehicles:
+{vehicles}
+*******************************
+AutoCountry Vehicle Finder v0.1
+*******************************
+Please Enter the following number below from the following menu:
+1. PRINT all Authorized Vehicles
+2. Exit
+"""
