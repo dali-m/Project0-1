@@ -10,7 +10,8 @@ def print_menu():
     print('********************************')
     print('Please Enter the following number below from the following menu:')
     print('1. PRINT all Authorized Vehicles')
-    print('2. Exit')
+    print('2. SEARCH for Authorized Vehicle')
+    print('3. Exit')
 
 #Adding second part of the menu.
 def print_allowed_vehicles_list():
