@@ -12,8 +12,15 @@ def print_menu():
     print('1. PRINT all Authorized Vehicles')
     print('2. SEARCH for Authorized Vehicle')
     print('3. Exit')
+    print('********************************')
+#Adding the end part of the menu.
+def print_all_vehicles():
+    print('Authorized Vehicles:')
+    for vehicle in AllowedVehiclesList:
+        print(vehicle)
+        print('*******************************')
 
-#Adding second part of the menu.
+#Second part of the menu 
 def print_allowed_vehicles_list():
     print('\nThe AutoCountry sales manager has authorized the purchase and selling of the following vehicles:')
     for vehicles in AllowedVehiclesList:
@@ -22,11 +29,12 @@ def print_allowed_vehicles_list():
 The AutoCountry sales manager has authorized the purchase and selling of the following vehicles:
 {print_allowed_vehicles_list}
 *******************************
-AutoCountry Vehicle Finder v0.1
+AutoCountry Vehicle Finder v0.2
 *******************************
 Please Enter the following number below from the following menu:
 1. PRINT all Authorized Vehicles
-2. Exit
+2. SEARCH for Authorized Vehicle
+3. Exit
 """
 #
 def main():
