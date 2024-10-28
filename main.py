@@ -13,12 +13,23 @@ def print_menu():
     print('2. SEARCH for Authorized Vehicle')
     print('3. Exit')
     print('********************************')
+
 #Adding the end part of the menu.
 def print_all_vehicles():
     print('Authorized Vehicles:')
     for vehicle in AllowedVehiclesList:
         print(vehicle)
         print('*******************************')
+
+#Defining search option.
+def search_vehicle(vehicle_name):
+    if vehicle_name in AllowedVehiclesList:
+     print(f"{vehicle_name} is an authorized vehicle")
+    else:
+        print(f"{vehicle_name} is not an authorized vehicle, if you received this in error please check the spelling and try again")
+        print('********************************')
+
+
 
 #Second part of the menu 
 def print_allowed_vehicles_list():
@@ -44,6 +55,9 @@ def main():
         if option == '1':
             print_allowed_vehicles_list()
         elif option == '2':
+            vehicle_name = input('Please Enter the full vehicle name:')
+            search_vehicle(vehicle_name)
+        elif option == '3':
             print('Thank you for using the AutoCountry Vehicle Finder, good-bye!')
             break
         else:
