@@ -1,12 +1,12 @@
 #CarFinder
-#This program allows a user to find allowed vehicles.
+#This program allows a user to find the list of cars available.
 
 AllowedVehiclesList = ['Ford F-150' , 'Chevrolet Silverado' , 'Tesla Cybertruck' , 'Toyota Tundra' , 'Nissan Titan']
 
 #Adding the menu.
 def print_menu():
     print('********************************')
-    print('AutoCountry Vehicle Finder v0.1')
+    print('AutoCountry Vehicle Finder v0.2')
     print('********************************')
     print('Please Enter the following number below from the following menu:')
     print('1. PRINT all Authorized Vehicles')
